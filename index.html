@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My CS50 journey·Home</title>
+    </head>
+    <body>
+        <!-- Background video -->
+        <div class="video-container">
+            <video autoplay muted loop id="CS50video">
+                <source src="images/CS50.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Navigation bar -->
+
+        <!-- Navigation bar -->
+        <div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="cs50.html">About CS50</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="journey.html">My CS50 Journey</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="qna.html">Q&A</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- Intro text -->
+        <div class="container intro" id="intro">
+            <p>Welcome to my</p>
+            <p><a>CS50</a> journey</p>
+            <!-- Use a button to pause/play the video with JavaScript -->
+            <button id="PauseButton" type="button" class="btn btn-secondary" onclick="PlayPause()">Pause</button>
+            <button id="MuteButton" type="button" class="btn btn-secondary" onclick="Mute()">Unmute</button>
+        </div>
+
+        <div class="container">
+            <p id="HomeCopyright">©2022 Le Ngoc Tram | A CS50 Project<br></p>
+        </div>
+
+        <script>
+            // Get the video
+            var video = document.getElementById("CS50video");
+
+            // Get the button
+            var PauseButton = document.getElementById("PauseButton");
+            var MuteButton = document.getElementById("MuteButton");
+
+            // Pause and play the video, and change the button text
+            function PlayPause() {
+              if (video.paused) {
+                video.play();
+                PauseButton.innerHTML = "Pause";
+              } else {
+                video.pause();
+                PauseButton.innerHTML = "Play";
+              }
+            }
+
+            // MuteButton
+            function Mute() {
+              if (video.muted) {
+                video.muted = false;
+                MuteButton.innerHTML = "Mute";
+              } else {
+                video.muted = true;
+                MuteButton.innerHTML = "Unmute";
+              }
+            }
+            </script>
+    </body>
+
+    <!-- Footer -->
+
+
+</html>

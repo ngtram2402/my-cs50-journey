@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My CS50 Journey</title>
+
+        <style>
+            body {
+              background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Anchor for button to top -->
+        <a id="top"></a>
+        <!-- Button to top -->
+        <a href="#top"><button class="float"><i class="arrow"></i></button></a>
+
+        <!-- Navigation bar -->
+      <div>
+          <ul class="nav">
+              <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="cs50.html">About CS50</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="journey.html">My CS50 journey</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="qna.html">Q&A</a>
+              </li>
+          </ul>
+      </div>
+
+      <div id="header">
+          MY CS50 JOURNEY
+      </div>
+
+      <!-- Article -->
+      <div class="container-fluid py-5 text-center" id="main">
+          <!-- Para 1-->
+          <h1>How long did it take me to complete CS50?</h1>
+          <img id="time" src="images/time.png" alt="CS50x Completion Time">
+          <p class="center">Total Completion Time: 142 hours | 12 minutes</p>
+
+      <!-- Table of Contents-->
+      <div id="toc_container">
+          <p class="toc_title">Contents</p>
+          <ul class="toc_list">
+              <li><a class="toc_link" href="#week0">Week 0 (Scratch)</a>
+              <li><a class="toc_link" href="#week1">Week 1 (C)</a>
+              <li><a class="toc_link" href="#week2">Week 2 (Arrays)</a>
+              <li><a class="toc_link" href="#week3">Week 3 (Algorithms)</a>
+              <li><a class="toc_link" href="#week4">Week 4 (Memory)</a>
+              <li><a class="toc_link" href="#week5">Week 5 (Data Structures)</a>
+              <li><a class="toc_link" href="#week6">Week 6 (Python)</a>
+              <li><a class="toc_link" href="#week7">Week 7 (SQL)</a>
+              <li><a class="toc_link" href="#week8">Week 8 (HTML, CSS, JavaScript)</a>
+              <li><a class="toc_link" href="#week9">Week 9 (Flask)</a>
+              <li><a class="toc_link" href="#week10">Week 10 (Emoji)</a>
+              <li><a class="toc_link" href="#project">Final Project</a>
+          </ul>
+      </div>
+          <!--Disclaimer-->
+          <h2>Some clarification</h2>
+          <p>If you find the problems too intimidating, remember: You don't have to code the programs from scratch. The structure, the main, and sometimes a few functions are usually pre-done by CS50 staff. You just need to understand what each part of the code does and complete the code by filling in the blanks.</p>
+          <!-- Week 0 -->
+          <h2 id="week0">Week 0 (Scratch) - Total: 14 hours 40 minutes</h2>
+          <ul id="week0-time">
+              <li>Lecture: 1 hour | 45 minutes</li>
+              <li>Problem (Scratch project): 12 hours | 55 minutes</li>
+          </ul>
+          <p>I spent quite a lot of time for week 0's problem, more than any other problems, but not because it was a difficult one. Rather, I wanted to perfect my Scratch game, making it as pretty and as similar to the original Block Breaker Boss Fight as possible.</p>
+          <p>You can check out my game <a href="https://scratch.mit.edu/projects/655642424/">here</a>.</p>
+          <img src="images/w0_scratch.png" alt="Scratch Project: Block Breaker Boss Fight">
+
+          <!-- Week 1 -->
+          <h2 id="week1">Week 1 (C) - Total: 8 hours | 43 minutes</h2>
+          <table class="table center" style="width:80%">
+              <thead>
+                <tr>
+                  <th scope="col" width="15%">Lecture/ Problem</th>
+                  <th scope="col" width="10%">Time</th>
+                  <th scope="col" width="40%">Description</th>
+                  <th scope="col" width="20%">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lecture</td>
+                  <td>2h 28m</td>
+                  <td>Introduction to C: data types, operators (+, -, >, == etc.), conditional statement, loops</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Problem 1: Hello</td>
+                  <td>13m</td>
+                  <td>A program that asks the user for their name, then prints "hello, [name]".<br>
+                      <i>Input: What's your name? David<br>
+                      Output: hello, David</i>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Problem 2: Mario (less)</td>
+                  <td>2h 48m</td>
+                  <td>A program that prints a right-aligned pyramid made of #.<br>
+                      <i>Input: Height: 3<br>
+                        Output:&nbsp; &nbsp; &nbsp;#<br>
+                        &nbsp;	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;##<br>
+                        &nbsp;	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;###</i>
+                  </td>
+                  <td>Looking back, it shouldn't have taken me this long to figure out this problem.</td>
+                </tr>
+                <tr>
+                  <td>Problem 3: Mario (more)</td>
+                  <td>2h 48m</td>
+                  <td>A program that prints a pyramid made of #.<br>
+                      <i>Input: Height: 3<br>
+                        Output:&nbsp; &nbsp; &nbsp;#&nbsp; &nbsp;#<br>
+                        &nbsp;	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;## &nbsp; &nbsp;##<br>
+                        &nbsp;	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;### &nbsp; &nbsp;###</i>
+                  </td>
+                  <td>Tips: Do Mario (less) before this. Mario (more) is just an extended version of Mario (less).</td>
+                </tr>
+                <tr>
+                  <td>Problem 4: Cash</td>
+                  <td>19m</td>
+                  <td>A program that asks the user for the amount of change, then prints the smallest number of coins with which that change can be made.<br>
+                      <i>Input: Change owed: 99<br>
+                        Output: 9</i><br>
+                        3 quarters (25¢), 2 dimes (10¢), 4 pennies (1¢)
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Problem 5: Credit</td>
+                  <td>2h 45m</td>
+                  <td>A program that asks the user for a number and then reports whether it is a valid credit card number.<br>
+                      <i>Input: Number: 4003600000000014<br>
+                        Output: VISA</i>
+                  </td>
+                  <td>Tips: The program adds the products' digits (not the products themselves) together.</td>
+                </tr>
+            </table>
+
+            <!-- Week 2 -->
+            <h2 id="week2">Week 2 (Arrays) - Total: 6 hours | 6 minutes</h2>
+            <table class="table center" style="width:80%">
+                <thead>
+                  <tr>
+                    <th scope="col" width="15%">Lecture/ Problem</th>
+                    <th scope="col" width="10%">Time</th>
+                    <th scope="col" width="40%">Description</th>
+                    <th scope="col" width="20%">Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lecture</td>
+                    <td>2h 8m</td>
+                    <td>Steps involve in compiling a program, debugging, functions, array, variable and scope</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Lab: Scrabble</td>
+                    <td>24m</td>
+                    <td>A program that determines the winner of a short scrabble-like game, where two players each enter their word, and the higher scoring player wins.<br>
+                        <i>Input: Player 1: COMPUTER<br>
+                          &nbsp;	&nbsp; &nbsp; &nbsp; &nbsp; Player 2: science<br>
+                          Output: Player 1 wins!</i>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Problem 1: Readability</td>
+                    <td>1h 13m</td>
+                    <td>A program that calculates the approximate grade level needed to comprehend some text.<br>
+                        <i>Input: Congratulations! Today is your day. You're off to Great Places! You're off and away!<br>
+                          Output: Grade 3</i>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Problem 2: Caesar</td>
+                    <td>1h 1m</td>
+                    <td>A program that encrypts messages using Caesar's cipher.<br>
+                        <i>Input: key: 13<br>
+                          &nbsp;	&nbsp; &nbsp; &nbsp; &nbsp; plaintext: Hello!<br>
+                          Output: ciphertext: Uryyb!</i>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Problem 3: Substitution</td>
+                    <td>1h 20m</td>
+                    <td>A program that implements a substitution cipher.<br>
+                        <i>Input: key: JTREKYAVOGDXPSNCUIZLFBMWHQ<br>
+                          &nbsp;	&nbsp; &nbsp; &nbsp; &nbsp; plaintext: Hello!<br>
+                          Output: ciphertext: Vkxxn!</i>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+          <!-- Week 3 -->
+          <h2 id="week3">Week 3 (Algorithms) - Total: 16 hours | 51 minutes</h2>
+          <table class="table center" style="width:80%">
+              <thead>
+                <tr>
+                  <th scope="col" width="15%">Lecture/ Problem</th>
+                  <th scope="col" width="10%">Time</th>
+                  <th scope="col" width="30%">Description</th>
+                  <th scope="col" width="30%">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lecture</td>
+                  <td>2h 17m</td>
+                  <td>Big (O) notation, searching and sorting, recursion</td>
+                  <td>Most enjoyable week IMO.</td>
+                </tr>
+                <tr>
+                  <td>Lab: Sort</td>
+                  <td>21m</td>
+                  <td>Analyze three sorting programs to determine which algorithms they use.</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Problem 1: Plurality</td>
+                  <td>1h 4m</td>
+                  <td>A program that runs a plurality election.<br>
+                      <i>Input: Candidates: Alice Bob Charlie<br>
+                          &nbsp;	&nbsp; &nbsp; &nbsp; &nbsp; Number of voters: 4<br>
+                          &nbsp;	&nbsp; &nbsp; &nbsp; &nbsp; Vote: Alice<br>
+                          &nbsp;	&nbsp; &nbsp; &nbsp; &nbsp; Vote: Bob<br>
+                          &nbsp;	&nbsp; &nbsp; &nbsp; &nbsp; Vote: Charlie<br>
+                          &nbsp;	&nbsp; &nbsp; &nbsp; &nbsp; Vote: Alice<br>
+                          Output: Alice wins!</i>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Problem 2: Runoff</td>
+                  <td>3h 15m</td>
+                  <td>A program that runs a runoff election.</td>
+                  <td>Tips: Write out ON PAPER the inputs and outputs of each step of the program.</td>
+                </tr>
+                <tr>
+                  <td>Problem 3: Tideman</td>
+                  <td>9h 54m</td>
+                  <td>A program that runs a Tideman election.</td>
+                  <td>Tideman killed me. Only got 87%, and still haven't figured out how to detect cycles.</td>
+                </tr>
+              </tbody>
+            </table>
+          <!-- Week 4 -->
+          <h2 id="week4">Week 4 (Memory) - Total: 10 hours | 22 minutes</h2>
+          <table class="table center" style="width:80%">
+              <thead>
+                <tr>
+                  <th scope="col" width="15%">Lecture/ Problem</th>
+                  <th scope="col" width="10%">Time</th>
+                  <th scope="col" width="30%">Description</th>
+                  <th scope="col" width="30%">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lecture</td>
+                  <td>2h 26m</td>
+                  <td>Hexadecimal, pointers, memory allocation</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Lab: Volume</td>
+                  <td>1h 49m</td>
+                  <td>A program that modifies the volume of an audio file.</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Problem 1: Filter (less)</td>
+                  <td>3h 14m</td>
+                  <td>A program that applies filters to an image (grayscale, sepia, reflection, blur).</td>
+                  <td>I had so much fun doing this problem. Tips: Draw a 3x3 matrix on paper to figure out how to cover all the pixels.</td>
+                </tr>
+                <tr>
+                  <td>Problem 2: Filter (more)</td>
+                  <td>43m</td>
+                  <td>A program that applies filters to an image (grayscale, reflection, blur, edges).</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Problem 3: Recover</td>
+                  <td>2h 10m</td>
+                  <td>A program that recovers JPEGs from a forensic image.</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Week 4 carousel -->
+            <div id="carouselw4" class="carousel slide" data-bs-ride="carousel">
+              <!-- Indicator (progress bar below) -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselw4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselw4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselw4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselw4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselw4" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselw4" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              </div>
+              <!-- Images -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/filter/org.bmp" class="d-block w-100" alt="Original image">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Original image</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/filter/grayscale.bmp" class="d-block w-100" alt="Grayscale">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Grayscale</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/filter/sepia.bmp" class="d-block w-100" alt="Sepia">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Sepia</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/filter/reflect.bmp" class="d-block w-100" alt="Reflection">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Reflection</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/filter/blur.bmp" class="d-block w-100" alt="Blur">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Blur</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/filter/edge.bmp" class="d-block w-100" alt="Edge">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Edge</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- Button -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselw4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselw4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          <!-- Week 5 -->
+          <h2 id="week5">Week 5 (Data Structures) - Total: 12 hours | 52 minutes</h2>
+          <table class="table center" style="width:80%">
+              <thead>
+                <tr>
+                  <th scope="col" width="15%">Lecture/ Problem</th>
+                  <th scope="col" width="10%">Time</th>
+                  <th scope="col" width="35%">Description</th>
+                  <th scope="col" width="25%">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lecture</td>
+                  <td>2h 13m</td>
+                  <td>Struct, Linked list, Hash table, Tree, Trie</td>
+                  <td>Most challenging week to me. I think I may have to rewatch the lecture and redo the pset.</td>
+                </tr>
+                <tr>
+                  <td>Lab: Inheritance</td>
+                  <td>2h 7m</td>
+                  <td>A program that simulates the inheritance of blood types for each member of a family.<br>
+                    <i>Child (Generation 0): blood type OO <br>
+                      &nbsp; &nbsp; Parent (Generation 1): blood type AO <br>
+                      &nbsp; &nbsp; &nbsp; &nbsp; Grandparent (Generation 2): blood type OA <br>
+                      &nbsp; &nbsp; &nbsp; &nbsp; Grandparent (Generation 2): blood type BO <br>
+                      &nbsp; &nbsp; Parent (Generation 1): blood type OB <br>
+                      &nbsp; &nbsp; &nbsp; &nbsp; Grandparent (Generation 2): blood type AO <br>
+                      &nbsp; &nbsp; &nbsp; &nbsp; Grandparent (Generation 2): blood type BO</i>
+                  </td>
+                  <td>The first time I had to resort to the solution video. I kept getting segfault :'(</td>
+                </tr>
+                <tr>
+                  <td>Problem: Speller</td>
+                  <td>8h 32m</td>
+                  <td>A program that spell-checks a file using a hash table.</td>
+                  <td>I just couldn't free my hash table. Had to Google the solution, and found a beautiful method, way simpler and shorter than the one in the walkthrough video - It only uses 1 pointer.</td>
+                </tr>
+              </tbody>
+            </table>
+
+          <!-- Week 6 -->
+          <h2 id="week6">Week 6 (Python) - Total: 8 hours | 10 minutes</h2>
+          <table class="table center" style="width:80%">
+              <thead>
+                <tr>
+                  <th scope="col" width="15%">Lecture/ Problem</th>
+                  <th scope="col" width="10%">Time</th>
+                  <th scope="col" width="30%">Description</th>
+                  <th scope="col" width="30%">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lecture</td>
+                  <td>2h 24m</td>
+                  <td>Introduction to Python</td>
+                  <td>So easy. So flexible. Python is a blessing.</td>
+                </tr>
+                <tr>
+                  <td>Lab: World Cup</td>
+                  <td>1h 19m</td>
+                  <td>A program that runs simulations of the FIFA World Cup.<br>
+                    <i>Input: A csv file containing the ratings for each team in the knockout round <br>
+                       Output: Belgium: 20.9% chance of winning<br>
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Brazil: 20.3% chance of winning <br>
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Portugal: 14.5% chance of winning <br>
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ...</i>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Problem 1-6: Sentimental</td>
+                  <td>2h 20m</td>
+                  <td>Redo week 1 and week 2's Readability using Python.</td>
+                  <td>Took me 1/3 the time I spent doing these in C. Credit, which I started over to implement a new approach, took half the time compared to C.</td>
+                </tr>
+                <tr>
+                  <td>Problem 7: DNA</td>
+                  <td>2h 7m</td>
+                  <td>A program that identifies a person based on their DNA.<br>
+                      <i>Input: a CSV file containing the STR counts for a list of individuals, and a text file containing the DNA sequence to identify<br>
+                         Output: Bob</i>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+          <!-- Week 7 -->
+          <h2 id="week7">Week 7 (SQL) - Total: 4 hours | 49 minutes</h2>
+          <table class="table center" style="width:80%">
+              <thead>
+                <tr>
+                  <th scope="col" width="15%">Lecture/ Problem</th>
+                  <th scope="col" width="10%">Time</th>
+                  <th scope="col" width="30%">Description</th>
+                  <th scope="col" width="30%">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lecture</td>
+                  <td>2h 22m</td>
+                  <td>Introduction to SQL</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Lab: Songs</td>
+                  <td>16m</td>
+                  <td>Write SQL queries to answer questions about a database of songs.</td>
+                  <td>I have learned SQL before, so the pset didn't took me long.</td>
+                </tr>
+                <tr>
+                  <td>Problem 1: Movies</td>
+                  <td>54m</td>
+                  <td>Write SQL queries to answer questions about a database of movies.</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Problem 2: Fiftyville</td>
+                  <td>1h 17m</td>
+                  <td>Write SQL queries to solve a mystery.</td>
+                  <td>A really fun problem. I love that feeling when I found a new clue and I knew the answer was right around the corner ^^</td>
+                </tr>
+              </tbody>
+            </table>
+
+          <!-- Week 8 -->
+          <h2 id="week8">Week 8 (HTML, CSS, JavaScript) - Total: 23 hours | 39 minutes</h2>
+          <table class="table center" style="width:80%">
+              <thead>
+                <tr>
+                  <th scope="col" width="15%">Lecture/ Problem</th>
+                  <th scope="col" width="10%">Time</th>
+                  <th scope="col" width="20%">Description</th>
+                  <th scope="col" width="40%">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lecture</td>
+                  <td>2h 53m</td>
+                  <td>Web development, TCP/IP</td>
+                  <td>Learning 3 new languages at once sounds scary, but just keep inspecting websites with interesting design, and you'll figure everything out in no time!</td>
+                </tr>
+                <tr>
+                  <td>Lab: Trivia</td>
+                  <td>2h 59m</td>
+                  <td>Write a webpage that lets users answer trivia questions.</td>
+                  <td>Tips: My Javascript code didn't work until I put it at the end of the body. Try this if you're stuck.</td>
+                </tr>
+                <tr>
+                  <td>Problem: Homepage</td>
+                  <td>17h 47m</td>
+                  <td>Build a simple homepage using HTML, CSS, and JavaScript.</td>
+                  <td>I knew I would still get 100% even if my website is just a simple one with no aesthetic or proper content, but I wanted to create something useful. That is why I spent 18 hours creating <a href="index.html">this website</a> instead!</td>
+                </tr>
+              </tbody>
+            </table>
+            <img id="trivia" src="images/trivia.png" alt="Lab 8: Trivia">
+
+          <!-- Week 9 -->
+          <h2 id="week9">Week 9 (Flask) - Total: 9 hours | 35 minutes</h2>
+          <table class="table center" style="width:80%">
+              <thead>
+                <tr>
+                  <th scope="col" width="15%">Lecture/ Problem</th>
+                  <th scope="col" width="10%">Time</th>
+                  <th scope="col" width="20%">Description</th>
+                  <th scope="col" width="40%">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lecture</td>
+                  <td>2h 16m</td>
+                  <td>Web app development</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Lab: Birthdays</td>
+                  <td>1h 18m</td>
+                  <td>Create a web application to keep track of friends' birthdays.</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Problem: Finance</td>
+                  <td>6h 1m</td>
+                  <td>Implement a website via which users can “buy” and “sell” stocks.</td>
+                  <td>Tips: Test by buying and selling both stocks that you already own and stocks that you don't own, multiple times. Although check50 gives me 100%, I later found out that if I buy more shares of a stock I already had, there would be an error.  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Week 9 carousel -->
+            <div id="carouselw9" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <!-- Indicator (progress bar below) -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselw9" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselw9" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <!-- Images -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/week9/birthdays.png" class="d-block w-100" alt="Lab 9: Birthdays">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Lab: Birthdays</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/week9/finance.png" class="d-block w-100" alt="Pset9: Finance">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Problem: Finance</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- Button -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselw9" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselw9" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          <!-- Week 10 -->
+          <h2 id="week10">Week 10 (Emoji) - Total: 1 hours | 25 minutes</h2>
+          <p>A webinar about how emojis came to be.</p>
+
+          <!-- Final project -->
+          <h2 id="project">Final Project - Total: 25 hours+</h2>
+          <p>My final project is a remake of <a href="https://ncase.me/trust/">The Evolution of Trust</a>'s sandbox by Nicky Case, with some modifications, using Python.</p>
+          <iframe width="640" height="360" src="https://www.youtube.com/embed/0wPwHSfOfas" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </body>
+
+    <!-- Footer -->
+    <footer class="container">
+        <p id="copyright">©2022 Le Ngoc Tram | A CS50 Project</p>
+    </footer>
+
+</html>

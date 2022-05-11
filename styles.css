@@ -1,0 +1,333 @@
+/* Background video */
+.video-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+#CS50video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+
+/* Video Buttons */
+#PauseButton {
+  margin-bottom: 100px;
+  margin-left: 12vw;
+}
+#MuteButton {
+  margin-bottom: 100px;
+  margin-left: 1vw;
+}
+
+/* index.html intro*/
+#intro a
+{
+  font-size: 18vw;
+  color: white
+}
+#intro
+{
+  line-height: 8vw;
+  font-size: 3vw;
+  color: white;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.intro {
+  margin-top: 3vw;
+  margin-left: 10vw;
+}
+
+/* Navigation bar */
+.nav {
+  overflow: hidden;
+  background-color: #333;
+}
+.nav-link {
+  color: white;
+}
+.nav-item {
+  color: white;
+}
+
+/* Header */
+#header {
+  color: white;
+  text-align: center;
+  font-size: 7vw;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+/* White background */
+#main {
+  background-color: #ffffff;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  max-width: 72rem;
+  z-index: 2;
+}
+
+/* Text */
+p {
+  text-align: left;
+  padding-top: 0rem;
+  padding-right: 9.5vw;
+  padding-bottom: 0rem;
+  padding-left: 9.5vw;
+}
+
+h1 {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2.2vmax;
+  text-align: left;
+  padding-top: 1rem;
+  padding-right: 9.5vw;
+  padding-bottom: 0.5rem;
+  padding-left: 9.5vw;
+}
+
+
+/* Image */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
+  max-width: 60%;
+  height: auto;
+}
+
+#trivia {
+  max-width: 80%;
+}
+
+/* Table */
+td {
+  text-align: left;
+}
+
+/* Completion time list */
+#week0-time, #lesson {
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 11vw;
+  padding-right: 11vw;
+}
+
+#week0-time, #lesson li {
+  padding-bottom: 1vw;
+}
+
+/* Alignment */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.left {
+  text-align: left;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 8rem;
+}
+
+/* Table of Contents */
+#toc_container {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #aaa;
+  display: table;
+  margin-top: 2vw;
+  margin-left: 9.5vw;
+  margin-bottom: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: auto;
+}
+.toc_title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+#toc_container li, #toc_container ul, #toc_container ul li{
+  list-style: outside none none !important;
+  text-align: left;
+}
+.toc_link {
+  color: black;
+  text-decoration: none;
+}
+
+/* Floating Back-To-Top Button */
+.float{
+	position:fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 1rem;
+	right: 1rem;
+	background-color: white;
+	border-radius: 50px;
+	text-align:center;
+  z-index: 9998!important;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+/* Week 4 carousel */
+.carousel {
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-inner {
+  max-width: 100%;
+  height: auto
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+/* Footer */
+#copyright {
+  margin-top: 4vw;
+  margin-bottom: 6vw;
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(128, 128, 128);
+}
+
+#HomeCopyright {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(128, 128, 128);
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 760px){
+
+  /* Table */
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { border: 1px solid #ccc; }
+
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+  /* Nav bar */
+  .nav-item {
+    font-size: 3.7vw
+  }
+
+  /* Headings */
+  h1 {
+    text-align: left;
+    padding-left: 9.5vw;
+  }
+
+  /* Youtube video */
+  iframe {
+    width: 80%;
+    height: auto;
+  }
+
+  /* Images */
+  img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  #copyright {
+    margin-top: 4vw;
+    margin-bottom: 6vw;
+    font-size: 0.9rem;
+    font-weight: 900;
+  }
+
+  /* Home */
+  #HomeCopyright {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+
+  #CS50video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  /* index.html intro*/
+  #intro a
+  {
+    font-size: 22vw;
+  }
+  #intro
+  {
+    line-height: 10vw;
+    font-size: 6vw;
+  }
+  .intro {
+    margin-top: 50vw;
+    margin-left: 3vw;
+  }
+}
